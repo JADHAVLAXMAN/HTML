@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        height: 70vh;
+        width: 100%;
+      }
+
+      .box {
+        height: 100wh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+      }
+      .box1 {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .img1 {
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 100%;
+      }
+      .boxT {
+        background-color: black;
+        color: white;
+        width: 50%;
+      }
+      .boxI {
+        width: 100%;
+      }
+
+      .text {
+        width: 100%;
+        font-size: larger;
+        height: 100%;
+        /* padding-top: 150px; */
+        /* line-height: 50px; */
+        padding: 95px 25px;
+        /* border: 2px solid red; */
+      }
+      .anchor {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        /* border: 2px solid red; */
+      }
+      .img2 {
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 100%;
+      }
+      .box2 {
+        position: relative;
+      }
+      .ceo {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background-color: blueviolet;
+        color: white;
+        padding: 30px;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+      }
+      .ceoI {
+        font-size: 35px;
+        padding: 5px;
+      }
+      i {
+        /* background-color: blueviolet; */
+        border-radius: 50%;
+        border: 2px solid white;
+        color: white;
+      }
+      i:hover {
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+      }
+
+      @media (max-width: 800px) {
+        .container {
+          display: inline-block;
+          justify-content: space-around;
+          height: 70vh;
+          width: 100%;
+        }
+
+        .box {
+          height: 50wh;
+          width: 100%;
+          /* border: 2px solid red; */
+          display: flex;
+          justify-content: center;
+        }
+        .box1 {
+          display: inline-block;
+        }
+        .img1 {
+          /* border: 2px solid red; */
+          height: 50%;
+          width: 100%;
+        }
+        .boxT {
+          background-color: black;
+          color: white;
+          width: 100%;
+          padding: 3px;
+        }
+        .boxI {
+          width: 100%;
+        }
+
+        .text {
+          width: 100%;
+          font-size: larger;
+          height: 100%;
+          /* padding-top: 150px; */
+          /* line-height: 50px; */
+          padding: 95px 25px;
+          /* border: 2px solid red; */
+        }
+        .anchor {
+          display: block;
+          text-decoration: none;
+          color: white;
+          /* border: 2px solid red; */
+        }
+        .img2 {
+          /* border: 2px solid red; */
+          height: 100%;
+          width: 100%;
+        }
+        .box2 {
+          position: relative;
+        }
+        .ceo {
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          background-color: blueviolet;
+          color: white;
+          padding: 30px;
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+
+          align-items: center;
+        }
+        .ceoI {
+          font-size: 35px;
+          padding: 5px;
+        }
+        i {
+          /* background-color: blueviolet; */
+          border-radius: 50%;
+          border: 2px solid white;
+          color: white;
+        }
+        i:hover {
+          background-color: black;
+          border-radius: 50%;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <div class="botI">
+          <img src="./office-space.jpg" class="img1" alt="Office Space Image" />
+        </div>
+
+        <div class="boxT">
+          <div class="text">
+            <h1>We're - Idealists and Strategic Thinkers.</h1>
+            <br />
+            <p>Over Six Years in the video Business</p>
+            <br /><br />
+            <a class="anchor" href="#">Read News & Events</a>
+            <a class="anchor" href="#">Work with US</a>
+          </div>
+        </div>
+      </div>
+      <div class="box box2">
+        <img src="./ceo-image.jpg" class="img2" alt="" />
+        <div class="ceo">
+          <div class="ceoT">
+            <h1>Morgan S.</h1>
+            <p>CEO & Investor</p>
+          </div>
+          <div class="ceoI">
+            <i class="bi bi-arrow-left-short"></i>
+            &nbsp;&nbsp;&nbsp;
+            <i class="bi bi-arrow-right-short"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
